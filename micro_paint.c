@@ -31,7 +31,7 @@ int should_fill(int x, int y, struct rect *rect)
 		return (0);
 	if (xa - rect->xtl < 1 || ya - rect->ytl < 1)
 		return (1);
-	if (xbr - xa < 1 || xbr - ya < 1)
+	if (xbr - xa < 1 || ybr - ya < 1)
 		return (1);
 	return (rect->type == 'R' ? 1 : 0);
 }
